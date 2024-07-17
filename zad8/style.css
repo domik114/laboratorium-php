@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background-color: #5c6bc0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3949ab;
+}
+
+main {
+    flex: 1;
+    padding: 6rem 2rem 2rem; /* Adjusted padding for fixed header */
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.content-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    word-wrap: break-word;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    color: #3f51b5;
+}
+
+p {
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+pre {
+    background: #f4f6f9;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+footer {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 0.001%; /* Zmniejszenie paddingu */
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
